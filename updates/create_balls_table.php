@@ -13,7 +13,7 @@ class CreateBallsTable extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('color');
-            $table->integer('basket_id')->unsigned();
+            $table->integer('basket_id')->unsigned()->nullable();
             $table->timestamps();
         });
     }
