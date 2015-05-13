@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Ball
+
+# Model Form Field configuration
+form: $/macrobit/demo/models/ball/fields.yaml
+
+# Model Class name
+modelClass: Macrobit\Demo\Models\Ball
+
+# Default redirect location
+defaultRedirect: macrobit/demo/balls
+
+# Create page
+create:
+    title: Create Ball
+    redirect: macrobit/demo/balls/update/:id
+    redirectClose: macrobit/demo/balls
+
+# Update page
+update:
+    title: Edit Ball
+    redirect: macrobit/demo/balls
+    redirectClose: macrobit/demo/balls
+
+# Preview page
+preview:
+    title: Preview Ball

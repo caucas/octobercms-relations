@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Basket
+
+# Model Form Field configuration
+form: $/macrobit/demo/models/basket/fields.yaml
+
+# Model Class name
+modelClass: Macrobit\Demo\Models\Basket
+
+# Default redirect location
+defaultRedirect: macrobit/demo/baskets
+
+# Create page
+create:
+    title: Create Basket
+    redirect: macrobit/demo/baskets/update/:id
+    redirectClose: macrobit/demo/baskets
+
+# Update page
+update:
+    title: Edit Basket
+    redirect: macrobit/demo/baskets
+    redirectClose: macrobit/demo/baskets
+
+# Preview page
+preview:
+    title: Preview Basket
